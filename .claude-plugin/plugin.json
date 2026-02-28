@@ -1,0 +1,221 @@
+{
+  "name": "financial-advisor-consultant",
+  "version": "0.1.0-alpha",
+  "description": "基于 Anthropic financial-services-plugins 架构设计的 To C 投顾场景完整技能体系，为中国大陆投资顾问提供投资分析、产品研究、客户服务、产品营销全流程支持。",
+  "author": "Your Name/Org",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/your-org/financial-advisor-consultant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/financial-advisor-consultant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/financial-advisor-consultant/issues"
+  },
+  "keywords": [
+    "financial-advisor",
+    "wealth-management",
+    "fund-analysis",
+    "portfolio-management",
+    "investment-research",
+    "client-service",
+    "financial-marketing",
+    "china-a-share",
+    "mutual-fund"
+  ],
+  "categories": [
+    "finance",
+    "investment",
+    "wealth-management"
+  ],
+  "target_audience": [
+    "investment-advisors",
+    "wealth-managers",
+    "financial-planners",
+    "fund-researchers",
+    "private-bankers"
+  ],
+  "supported_languages": [
+    "zh-CN"
+  ],
+  "pricing": {
+    "model": "free",
+    "description": "开源免费使用"
+  },
+  "skills": {
+    "investment-analysis": {
+      "name": "投资分析",
+      "description": "基金筛选、资产配置、组合诊断",
+      "files": [
+        "skills/investment-analysis/fund-screening.md",
+        "skills/investment-analysis/asset-allocation.md",
+        "skills/investment-analysis/portfolio-diagnosis.md"
+      ]
+    },
+    "product-research": {
+      "name": "产品研究",
+      "description": "基金深度研究、市场观点、晨会准备",
+      "files": [
+        "skills/product-research/fund-deep-dive.md",
+        "skills/product-research/market-insight.md",
+        "skills/product-research/morning-meeting-prep.md"
+      ]
+    },
+    "client-service": {
+      "name": "客户服务",
+      "description": "客户画像、需求分析、售后维护",
+      "files": [
+        "skills/client-service/client-profiling.md",
+        "skills/client-service/needs-analysis.md",
+        "skills/client-service/after-sales-care.md"
+      ]
+    },
+    "marketing": {
+      "name": "产品营销",
+      "description": "推介材料、内容创作、活动策划",
+      "files": [
+        "skills/marketing/product-collateral.md",
+        "skills/marketing/content-creation.md",
+        "skills/marketing/event-marketing.md"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "name": "/fund-screen",
+      "description": "基金筛选与推荐",
+      "file": "commands/fund-screen.md"
+    },
+    {
+      "name": "/portfolio-review",
+      "description": "组合诊断与优化",
+      "file": "commands/portfolio-review.md"
+    },
+    {
+      "name": "/allocation-model",
+      "description": "资产配置方案",
+      "file": "commands/allocation-model.md"
+    },
+    {
+      "name": "/fund-research",
+      "description": "基金深度研究",
+      "file": "commands/fund-research.md"
+    },
+    {
+      "name": "/market-note",
+      "description": "市场点评生成",
+      "file": "commands/market-note.md"
+    },
+    {
+      "name": "/client-kyc",
+      "description": "客户画像与风险评估",
+      "file": "commands/client-kyc.md"
+    },
+    {
+      "name": "/client-review",
+      "description": "客户回访与维护",
+      "file": "commands/client-review.md"
+    },
+    {
+      "name": "/product-deck",
+      "description": "产品推介材料",
+      "file": "commands/product-deck.md"
+    },
+    {
+      "name": "/content",
+      "description": "内容创作",
+      "file": "commands/content-generator.md"
+    },
+    {
+      "name": "/event-plan",
+      "description": "营销活动策划",
+      "file": "commands/event-plan.md"
+    }
+  ],
+  "templates": {
+    "reports": [
+      "fund-comparison.xlsx",
+      "portfolio-diagnosis.pdf",
+      "allocation-proposal.pptx",
+      "fund-research.pdf"
+    ],
+    "content": [
+      "morning-note-template.md",
+      "wechat-post-template.md",
+      "live-script-template.md"
+    ],
+    "marketing": [
+      "product-one-pager.pptx",
+      "pitch-deck-template.pptx",
+      "event-proposal.docx"
+    ]
+  },
+  "examples": [
+    "fund-screen-example.md",
+    "portfolio-review-example.md",
+    "market-note-example.md",
+    "product-deck-example.md"
+  ],
+  "dependencies": {
+    "data_sources": [
+      {
+        "name": "Wind",
+        "description": "Wind金融终端，首选数据源",
+        "required": true
+      },
+      {
+        "name": "同花顺iFinD",
+        "description": "同花顺金融数据终端",
+        "required": false
+      },
+      {
+        "name": "Choice",
+        "description": "东方财富Choice金融终端",
+        "required": false
+      }
+    ],
+    "crm_systems": [
+      {
+        "name": "Custom CRM",
+        "description": "客户信息管理系统",
+        "required": false
+      }
+    ],
+    "other": [
+      {
+        "name": "微信公众号",
+        "description": "内容发布渠道",
+        "required": false
+      },
+      {
+        "name": "视频号/抖音",
+        "description": "短视频发布渠道",
+        "required": false
+      }
+    ]
+  },
+  "roadmap": {
+    "completed": [
+      "项目整体架构设计",
+      "SKILL.md 总纲文档",
+      "投资分析技能（基金筛选、资产配置、组合诊断）",
+      "产品研究技能（市场观点、晨会准备）",
+      "客户服务技能（客户画像）",
+      "营销技能（内容创作）",
+      "主要命令定义",
+      "README.md 项目说明",
+      "plugin.json 插件清单"
+    ],
+    "in_progress": [
+      "补充剩余技能模块",
+      "创建输出模板",
+      "添加使用示例"
+    ],
+    "planned": [
+      "接入国内数据源（Wind、同花顺）",
+      "对接 CRM 系统",
+      "开发自动化工作流",
+      "多语言支持（中英文）"
+    ]
+  }
+}
